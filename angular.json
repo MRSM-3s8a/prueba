@@ -24,9 +24,33 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/vendors/general/animate.css/animate.css",
+              "src/assets/vendors/general/morris.js/morris.css",
+              "src/assets/vendors/custom/vendors/line-awesome/css/line-awesome.css",
+              "src/assets/vendors/custom/vendors/flaticon/flaticon.css",
+              "src/assets/vendors/custom/vendors/flaticon2/flaticon.css",
+              "src/assets/vendors/general/nouislider/distribute/nouislider.css",
+              "src/assets/vendors/general/@fortawesome/fontawesome-free/css/all.min.css",
+              "src/assets/css/demo12/style.bundle.css",
+              "src/assets/css/demo12/custom.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/vendors/general/jquery/dist/jquery.js",
+              "src/assets/vendors/general/popper.js/dist/umd/popper.js",
+              "src/assets/vendors/general/bootstrap/dist/js/bootstrap.min.js",
+              "src/assets/vendors/general/js-cookie/src/js.cookie.js",
+              "src/assets/vendors/general/moment/min/moment.min.js",
+              "src/assets/vendors/general/perfect-scrollbar/dist/perfect-scrollbar.js",
+              "src/assets/vendors/general/sticky-js/dist/sticky.min.js",
+              "src/assets/vendors/general/owl.carousel/dist/owl.carousel.js",
+              "src/assets/vendors/general/morris.js/morris.js",
+              "src/assets/vendors/general/jquery.repeater/src/lib.js",
+              "src/assets/vendors/general/jquery.repeater/src/repeater.js",
+              "src/assets/vendors/general/mdb.min.js",
+              "src/assets/js/demo12/scripts.bundle.js",
+              "src/assets/js/demo12/pages/dashboard.js"
+            ]
           },
           "configurations": {
             "production": {
