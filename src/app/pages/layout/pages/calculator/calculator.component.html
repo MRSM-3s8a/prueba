@@ -3,40 +3,144 @@
         <ul nz-menu nzMode="inline">
             <li nz-submenu nzTitle="Equiment Fleet" [(nzOpen)]="openMap.sub1" (nzOpenChange)="openHandler('sub1')" >
                 <ul>
-                    <li nz-menu-item><i class="fa fa-truck" aria-hidden="true"></i>Loaders</li>
-                    <li nz-menu-item><i class="fa fa-truck" aria-hidden="true"></i>Trucks</li>
-                    <li nz-menu-item><i class="fa fa-truck" aria-hidden="true"></i>Jumbos</li>
-                    <li nz-menu-item><i class="fa fa-truck" aria-hidden="true"></i>Long Hole Rigs</li>
-                    <li nz-menu-item><i class="fa fa-truck" aria-hidden="true"></i>Charger Trucks</li>
-                    <li nz-menu-item><i class="fa fa-truck" aria-hidden="true"></i>Forklifts</li>
-                    <li nz-menu-item><i class="fa fa-truck" aria-hidden="true"></i>LVs</li>
-                    <li nz-menu-item><i class="fa fa-truck" aria-hidden="true"></i>Other</li>
+                    <li nz-menu-item>
+                        <a routerLink="equipment-fleet">
+                            <i class="fa fa-truck" aria-hidden="true"></i>Loaders
+                        </a>
+                    </li>
+                    <li nz-menu-item>
+                        <a routerLink="equipment-fleet">
+                            <i class="fa fa-truck" aria-hidden="true"></i>Trucks
+                        </a>
+                    </li>
+                    <li nz-menu-item>
+                        <a routerLink="equipment-fleet">
+                            <i class="fa fa-truck" aria-hidden="true"></i>Jumbos
+                        </a>
+                    </li>
+                    <li nz-menu-item>
+                        <a routerLink="equipment-fleet">
+                            <i class="fa fa-truck" aria-hidden="true"></i>Long Hole Rigs
+                        </a>
+                    </li>
+                    <li nz-menu-item>
+                        <a routerLink="equipment-fleet">
+                            <i class="fa fa-truck" aria-hidden="true"></i>Charger Trucks
+                        </a>
+                    </li>
+                    <li nz-menu-item>
+                        <a routerLink="equipment-fleet">
+                            <i class="fa fa-truck" aria-hidden="true"></i>Forklifts
+                        </a>
+                    </li>
+                    <li nz-menu-item>
+                        <a routerLink="equipment-fleet">
+                            <i class="fa fa-truck" aria-hidden="true"></i>LVs
+                        </a>
+                    </li>
+                    <li nz-menu-item>
+                        <a routerLink="equipment-fleet">
+                            <i class="fa fa-truck" aria-hidden="true"></i>Other
+                        </a>
+                    </li>
                 </ul>
             </li>
             <li nz-submenu nzTitle="Manpower" [(nzOpen)]="openMap.sub2" (nzOpenChange)="openHandler('sub2')" >
                 <ul>
-                    <li nz-menu-item><i class="fa fa-truck" aria-hidden="true"></i>Loaders Operators</li>
-                    <li nz-menu-item><i class="fa fa-truck" aria-hidden="true"></i>Trucks Operators</li>
-                    <li nz-menu-item><i class="fa fa-truck" aria-hidden="true"></i>Jumbos Operators</li>
-                    <li nz-menu-item><i class="fa fa-truck" aria-hidden="true"></i>Long Hole Rigs Operators</li>
-                    <li nz-menu-item><i class="fa fa-truck" aria-hidden="true"></i>Charger Trucks Operators</li>
-                    <li nz-menu-item><i class="fa fa-truck" aria-hidden="true"></i>Forklifts Operators</li>
-                    <li nz-menu-item><i class="fa fa-truck" aria-hidden="true"></i>LVs Operators</li>
-                    <li nz-menu-item><i class="fa fa-truck" aria-hidden="true"></i>Other Operators</li>
+                    <li nz-menu-item>
+                        <a routerLink="manpower">
+                            <i class="fa fa-truck" aria-hidden="true"></i>Loaders Operators
+                        </a>
+                    </li>
+                    <li nz-menu-item>
+                        <a routerLink="manpower">
+                            <i class="fa fa-truck" aria-hidden="true"></i>Trucks Operators
+                        </a>
+                    </li>
+                    <li nz-menu-item>
+                        <a routerLink="manpower">
+                            <i class="fa fa-truck" aria-hidden="true"></i>Jumbos Operators
+                        </a>
+                    </li>
+                    <li nz-menu-item>
+                        <a routerLink="manpower">
+                            <i class="fa fa-truck" aria-hidden="true"></i>Long Hole Rigs Operators
+                        </a>
+                    </li>
+                    <li nz-menu-item>
+                        <a routerLink="manpower">
+                            <i class="fa fa-truck" aria-hidden="true"></i>Charger Trucks Operators
+                        </a>
+                    </li>
+                    <li nz-menu-item>
+                        <a routerLink="manpower">
+                            <i class="fa fa-truck" aria-hidden="true"></i>Forklifts Operators
+                        </a>
+                    </li>
+                    <li nz-menu-item>
+                        <a routerLink="manpower">
+                            <i class="fa fa-truck" aria-hidden="true"></i>LVs Operators
+                        </a>
+                    </li>
+                    <li nz-menu-item>
+                        <a routerLink="manpower">
+                            <i class="fa fa-truck" aria-hidden="true"></i>Other Operators
+                        </a>
+                    </li>
                 </ul>
             </li>
-            <li nz-menu-item>Consumables</li>
-            <li nz-menu-item>Ore Parameters</li> 
+            <li nz-menu-item>
+                <a routerLink="consumables">
+                    Consumables
+                </a>
+            </li>
+            <li nz-menu-item>
+                <a routerLink="ore-parameters">
+                    Ore Parameters
+                </a>
+            </li> 
             <li nz-submenu nzTitle="Productivity" [(nzOpen)]="openMap.sub3" (nzOpenChange)="openHandler('sub3')" >
                 <ul>
-                    <li nz-menu-item><i class="fa fa-truck" aria-hidden="true"></i>Loaders</li>
-                    <li nz-menu-item><i class="fa fa-truck" aria-hidden="true"></i>Trucks</li>
-                    <li nz-menu-item><i class="fa fa-truck" aria-hidden="true"></i>Jumbos</li>
-                    <li nz-menu-item><i class="fa fa-truck" aria-hidden="true"></i>Long Hole Rigs</li>
-                    <li nz-menu-item><i class="fa fa-truck" aria-hidden="true"></i>Charger Trucks</li>
-                    <li nz-menu-item><i class="fa fa-truck" aria-hidden="true"></i>Forklifts</li>
-                    <li nz-menu-item><i class="fa fa-truck" aria-hidden="true"></i>LVs</li>
-                    <li nz-menu-item><i class="fa fa-truck" aria-hidden="true"></i>Other</li>
+                    <li nz-menu-item>
+                        <a routerLink="productivity">
+                            <i class="fa fa-truck" aria-hidden="true"></i>Loaders
+                        </a>
+                    </li>
+                    <li nz-menu-item>
+                        <a routerLink="productivity">
+                            <i class="fa fa-truck" aria-hidden="true"></i>Trucks
+                        </a>
+                    </li>
+                    <li nz-menu-item>
+                        <a routerLink="productivity">
+                            <i class="fa fa-truck" aria-hidden="true"></i>Jumbos
+                        </a>
+                    </li>
+                    <li nz-menu-item>
+                        <a routerLink="productivity">
+                            <i class="fa fa-truck" aria-hidden="true"></i>Long Hole Rigs
+                        </a>
+                    </li>
+                    <li nz-menu-item>
+                        <a routerLink="productivity">
+                            <i class="fa fa-truck" aria-hidden="true"></i>Charger Trucks
+                        </a>
+                    </li>
+                    <li nz-menu-item>
+                        <a routerLink="productivity">
+                            <i class="fa fa-truck" aria-hidden="true"></i>Forklifts
+                        </a>
+                    </li>
+                    <li nz-menu-item>
+                        <a routerLink="productivity">
+                            <i class="fa fa-truck" aria-hidden="true"></i>LVs
+                        </a>
+                    </li>
+                    <li nz-menu-item>
+                        <a routerLink="productivity">
+                            <i class="fa fa-truck" aria-hidden="true"></i>Other
+                        </a>
+                    </li>
                 </ul>
             </li>
           </ul>
