@@ -9,6 +9,16 @@ import { ActivatedRoute } from '@angular/router';
 export class EquipmentFleetComponent implements OnInit {
 
   menuActivated: string;
+  ALLOWED_ROUTES = [
+    'loaders',
+    'trucks',
+    'jumbos',
+    'longhole',
+    'charger',
+    'forklifts',
+    'lvs',
+    'others',
+  ]
   constructor(
     public activatedRoute: ActivatedRoute
   ) { 
@@ -17,7 +27,11 @@ export class EquipmentFleetComponent implements OnInit {
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe((params) => {
-      this.menuActivated = params['menuOption'];
+      const menuOption = params['menuOption'];
+      if (this.ALLOWED_ROUTES.includes(menuOption))
+        this.menuActivated = menuOption;
+      else
+        this.menuActivated = this.ALLOWED_ROUTES[0];
     });
   }
 
