@@ -9,7 +9,7 @@ const routes: Routes = [
     component: CalculatorComponent,
     children: [
       {
-          path: 'equipment-fleet/:menuOption',
+          path: 'equipment-fleet',
           loadChildren: () => import('./pages/equipment-fleet/equipment-fleet.module').then(m => m.EquipmentFleetModule)
       },
       {

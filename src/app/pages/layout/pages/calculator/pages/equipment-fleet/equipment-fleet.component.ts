@@ -26,7 +26,7 @@ export class EquipmentFleetComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.activatedRoute.params.subscribe((params) => {
+    this.activatedRoute.data.subscribe((params) => {
       const menuOption = params['menuOption'];
       if (this.ALLOWED_ROUTES.includes(menuOption))
         this.menuActivated = menuOption;
