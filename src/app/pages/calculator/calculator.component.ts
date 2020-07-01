@@ -10,7 +10,7 @@ export class CalculatorComponent implements OnInit {
   openMap: { [name: string]: boolean } = {
     sub1: true,
     sub2: false,
-    sub3: false
+    sub3: false,
   };
 
   constructor() { }
