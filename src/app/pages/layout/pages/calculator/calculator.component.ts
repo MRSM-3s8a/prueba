@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-calculator',
@@ -13,7 +14,9 @@ export class CalculatorComponent implements OnInit {
     sub3: false,
   };
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
   }
@@ -24,6 +27,11 @@ export class CalculatorComponent implements OnInit {
         this.openMap[key] = false;
       }
     }
+  }
+
+  navigateTo(route:string, option: string){
+    // this.router.navigate([route,option]);
+    this.router.navigate([route,option]);
   }
 
 }

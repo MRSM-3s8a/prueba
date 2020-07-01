@@ -4,42 +4,42 @@
             <li nz-submenu nzTitle="Equiment Fleet" [(nzOpen)]="openMap.sub1" (nzOpenChange)="openHandler('sub1')" >
                 <ul>
                     <li nz-menu-item>
-                        <a routerLink="['equipment-fleet','loaders']">
+                        <a (click)="navigateTo('calculator/equipment-fleet','loaders')">
                             <i class="fa fa-truck" aria-hidden="true"></i>Loaders
                         </a>
                     </li>
                     <li nz-menu-item>
-                        <a routerLink="['equipment-fleet','trucks']">
+                        <a (click)="navigateTo('calculator/equipment-fleet','trucks')">
                             <i class="fa fa-truck" aria-hidden="true"></i>Trucks
                         </a>
                     </li>
                     <li nz-menu-item>
-                        <a routerLink="['equipment-fleet','jumbos']">
+                        <a (click)="navigateTo('calculator/equipment-fleet','jumbos')">
                             <i class="fa fa-truck" aria-hidden="true"></i>Jumbos
                         </a>
                     </li>
                     <li nz-menu-item>
-                        <a routerLink="['equipment-fleet','long']">
+                        <a (click)="navigateTo('calculator/equipment-fleet','longhole')">
                             <i class="fa fa-truck" aria-hidden="true"></i>Long Hole Rigs
                         </a>
                     </li>
                     <li nz-menu-item>
-                        <a routerLink="['equipment-fleet','charger']">
+                        <a (click)="navigateTo('calculator/equipment-fleet','charger')">
                             <i class="fa fa-truck" aria-hidden="true"></i>Charger Trucks
                         </a>
                     </li>
                     <li nz-menu-item>
-                        <a routerLink="['equipment-fleet','forklifts']">
+                        <a (click)="navigateTo('calculator/equipment-fleet','forklifts')">
                             <i class="fa fa-truck" aria-hidden="true"></i>Forklifts
                         </a>
                     </li>
                     <li nz-menu-item>
-                        <a routerLink="['equipment-fleet','lvs']">
+                        <a (click)="navigateTo('calculator/equipment-fleet','lvs')">
                             <i class="fa fa-truck" aria-hidden="true"></i>LVs
                         </a>
                     </li>
                     <li nz-menu-item>
-                        <a routerLink="['equipment-fleet','other']">
+                        <a (click)="navigateTo('calculator/equipment-fleet','others')">
                             <i class="fa fa-truck" aria-hidden="true"></i>Other
                         </a>
                     </li>
