@@ -12,6 +12,22 @@ const routes: Routes = [
           path: 'equipment-fleet',
           loadChildren: () => import('./pages/equipment-fleet/equipment-fleet.module').then(m => m.EquipmentFleetModule)
       },
+      {
+          path: 'consumables',
+          loadChildren: () => import('./pages/consumables/consumables.module').then(m => m.ConsumablesModule)
+      },
+      {
+          path: 'manpower',
+          loadChildren: () => import('./pages/manpower/manpower.module').then(m => m.ManpowerModule)
+      },
+      {
+          path: 'ore-parameters',
+          loadChildren: () => import('./pages/ore-parameters/ore-parameters.module').then(m => m.OreParametersModule)
+      },
+      {
+          path: 'productivity',
+          loadChildren: () => import('./pages/productivity/productivity.module').then(m => m.ProductivityModule)
+      },
       // {
       //     path: 'calculator',
       //     loadChildren: () => import('./pages/calculator/calculator.module').then(m => m.CalculatorModule)
