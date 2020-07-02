@@ -1,0 +1,154 @@
+<nz-layout class="animate__animated animate__fadeIn">
+    <nz-sider class="menu-sidebar">
+        <ul nz-menu nzMode="inline">
+            <li nz-submenu nzTitle="Equiment Fleet" [(nzOpen)]="openMap.sub1" (nzOpenChange)="openHandler('sub1')" >
+                <ul>
+                    <li nz-menu-item>
+                        <a (click)="navigateTo('calculator/equipment-fleet','loaders')">
+                            <i class="fa fa-truck" aria-hidden="true"></i>Loaders
+                        </a>
+                    </li>
+                    <li nz-menu-item>
+                        <a (click)="navigateTo('calculator/equipment-fleet','trucks')">
+                            <i class="fa fa-truck" aria-hidden="true"></i>Trucks
+                        </a>
+                    </li>
+                    <li nz-menu-item>
+                        <a (click)="navigateTo('calculator/equipment-fleet','jumbos')">
+                            <i class="fa fa-truck" aria-hidden="true"></i>Jumbos
+                        </a>
+                    </li>
+                    <li nz-menu-item>
+                        <a (click)="navigateTo('calculator/equipment-fleet','longhole')">
+                            <i class="fa fa-truck" aria-hidden="true"></i>Long Hole Rigs
+                        </a>
+                    </li>
+                    <li nz-menu-item>
+                        <a (click)="navigateTo('calculator/equipment-fleet','charger')">
+                            <i class="fa fa-truck" aria-hidden="true"></i>Charger Trucks
+                        </a>
+                    </li>
+                    <li nz-menu-item>
+                        <a (click)="navigateTo('calculator/equipment-fleet','forklifts')">
+                            <i class="fa fa-truck" aria-hidden="true"></i>Forklifts
+                        </a>
+                    </li>
+                    <li nz-menu-item>
+                        <a (click)="navigateTo('calculator/equipment-fleet','lvs')">
+                            <i class="fa fa-truck" aria-hidden="true"></i>LVs
+                        </a>
+                    </li>
+                    <li nz-menu-item>
+                        <a (click)="navigateTo('calculator/equipment-fleet','others')">
+                            <i class="fa fa-truck" aria-hidden="true"></i>Other
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li nz-submenu nzTitle="Manpower" [(nzOpen)]="openMap.sub2" (nzOpenChange)="openHandler('sub2')" >
+                <ul>
+                    <li nz-menu-item>
+                        <a (click)="navigateTo('calculator/manpower','loaders')">
+                            <i class="fa fa-truck" aria-hidden="true"></i>Loaders Operators
+                        </a>
+                    </li>
+                    <li nz-menu-item>
+                        <a (click)="navigateTo('calculator/manpower','trucks')">
+                            <i class="fa fa-truck" aria-hidden="true"></i>Trucks Operators
+                        </a>
+                    </li>
+                    <li nz-menu-item>
+                        <a (click)="navigateTo('calculator/manpower','jumbos')">
+                            <i class="fa fa-truck" aria-hidden="true"></i>Jumbos Operators
+                        </a>
+                    </li>
+                    <li nz-menu-item>
+                        <a (click)="navigateTo('calculator/manpower','longhole')">
+                            <i class="fa fa-truck" aria-hidden="true"></i>Long Hole Rigs Operators
+                        </a>
+                    </li>
+                    <li nz-menu-item>
+                        <a (click)="navigateTo('calculator/manpower','charger')">
+                            <i class="fa fa-truck" aria-hidden="true"></i>Charger Trucks Operators
+                        </a>
+                    </li>
+                    <li nz-menu-item>
+                        <a (click)="navigateTo('calculator/manpower','forklifts')">
+                            <i class="fa fa-truck" aria-hidden="true"></i>Forklifts Operators
+                        </a>
+                    </li>
+                    <li nz-menu-item>
+                        <a (click)="navigateTo('calculator/manpower','lvs')">
+                            <i class="fa fa-truck" aria-hidden="true"></i>LVs Operators
+                        </a>
+                    </li>
+                    <li nz-menu-item>
+                        <a (click)="navigateTo('calculator/manpower','others')">
+                            <i class="fa fa-truck" aria-hidden="true"></i>Other Operators
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li nz-menu-item>
+                <a routerLink="consumables">
+                    Consumables
+                </a>
+            </li>
+            <li nz-menu-item>
+                <a routerLink="ore-parameters">
+                    Ore Parameters
+                </a>
+            </li> 
+            <li nz-submenu nzTitle="Productivity" [(nzOpen)]="openMap.sub3" (nzOpenChange)="openHandler('sub3')" >
+                <ul>
+                    <li nz-menu-item>
+                        <a (click)="navigateTo('calculator/productivity','loaders')">
+                            <i class="fa fa-truck" aria-hidden="true"></i>Loaders
+                        </a>
+                    </li>
+                    <li nz-menu-item>
+                        <a (click)="navigateTo('calculator/productivity','trucks')">
+                            <i class="fa fa-truck" aria-hidden="true"></i>Trucks
+                        </a>
+                    </li>
+                    <li nz-menu-item>
+                        <a (click)="navigateTo('calculator/productivity','jumbos')">
+                            <i class="fa fa-truck" aria-hidden="true"></i>Jumbos
+                        </a>
+                    </li>
+                    <li nz-menu-item>
+                        <a (click)="navigateTo('calculator/productivity','longhole')">
+                            <i class="fa fa-truck" aria-hidden="true"></i>Long Hole Rigs
+                        </a>
+                    </li>
+                    <li nz-menu-item>
+                        <a (click)="navigateTo('calculator/productivity','charger')">
+                            <i class="fa fa-truck" aria-hidden="true"></i>Charger Trucks
+                        </a>
+                    </li>
+                    <li nz-menu-item>
+                        <a (click)="navigateTo('calculator/productivity','forklifts')">
+                            <i class="fa fa-truck" aria-hidden="true"></i>Forklifts
+                        </a>
+                    </li>
+                    <li nz-menu-item>
+                        <a (click)="navigateTo('calculator/productivity','lvs')">
+                            <i class="fa fa-truck" aria-hidden="true"></i>LVs
+                        </a>
+                    </li>
+                    <li nz-menu-item>
+                        <a (click)="navigateTo('calculator/productivity','others')">
+                            <i class="fa fa-truck" aria-hidden="true"></i>Other
+                        </a>
+                    </li>
+                </ul>
+            </li>
+          </ul>
+    </nz-sider>
+    <nz-layout>
+        <nz-header>Header</nz-header>
+        <nz-content>
+          <router-outlet></router-outlet>
+        </nz-content>
+    </nz-layout>
+  </nz-layout>
