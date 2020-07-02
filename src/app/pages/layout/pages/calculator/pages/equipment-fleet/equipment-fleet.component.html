@@ -4,44 +4,120 @@
     
     <div [ngSwitch]="menuActivated">
         <!-- <pre *ngSwitchDefault>ng generate component xyz</pre> -->
-        <nz-card *ngSwitchCase="'loaders'" nzTitle="Quantity">
-            <div class="row">
-                <div class="col-md-12">
-                    <p>Number of loaders</p>
+        <div *ngSwitchCase="'loaders'">
+            <div class="row my-3" >
+                <div class="col">
+                    <nz-card  nzTitle="Quantity">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>Number of loaders</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <nz-slider #slider></nz-slider>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class="col">
+                                        Loaders
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        {{slider.value}}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class="col">
+                                        Operators
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        {{slider.value}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nz-card>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <nz-slider #slider></nz-slider>
+            <div class="row my-3">
+                <div class="col">
+                    <nz-card nzTitle="Equipment Costs">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>Purchase price</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p>INPUT</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>Salvage Value</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p>INPUT</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>Useful Life</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p>INPUT</p>
+                            </div>
+                        </div>
+                    </nz-card>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="row">
-                        <div class="col">
-                            Loaders
+            <div class="row my-3">
+                <div class="col">
+                    <nz-card nzTitle="Equipment Costs">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>Fuel consumption</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p>INPUT</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            {{slider.value}}
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>Fuel Unit Price</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p>INPUT</p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="row">
-                        <div class="col">
-                            Operators
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>Average Life of Tyres</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p>INPUT</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            {{slider.value}}
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>Cost of set of tyres</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p>INPUT</p>
+                            </div>
                         </div>
-                    </div>
+                    </nz-card>
                 </div>
             </div>
-        </nz-card>
+        </div>
+        
+        
         <pre *ngSwitchCase="'trucks'">trucks</pre>
         <pre *ngSwitchCase="'jumbos'">jumbos</pre>
         <pre *ngSwitchCase="'longhole'">longhole</pre>
