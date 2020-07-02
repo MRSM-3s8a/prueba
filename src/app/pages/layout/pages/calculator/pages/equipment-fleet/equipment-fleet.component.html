@@ -5,11 +5,42 @@
     <div [ngSwitch]="menuActivated">
         <!-- <pre *ngSwitchDefault>ng generate component xyz</pre> -->
         <nz-card *ngSwitchCase="'loaders'" nzTitle="Quantity">
-            <p>Number of loaders</p>
-            <nz-slider></nz-slider>
-            <p>Card content</p>
-            <p>Card content</p>
-            <p>Card content</p>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Number of loaders</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <nz-slider #slider></nz-slider>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="row">
+                        <div class="col">
+                            Loaders
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            {{slider.value}}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="row">
+                        <div class="col">
+                            Operators
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            {{slider.value}}
+                        </div>
+                    </div>
+                </div>
+            </div>
         </nz-card>
         <pre *ngSwitchCase="'trucks'">trucks</pre>
         <pre *ngSwitchCase="'jumbos'">jumbos</pre>
