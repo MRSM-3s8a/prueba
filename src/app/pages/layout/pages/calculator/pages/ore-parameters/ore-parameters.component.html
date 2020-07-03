@@ -1,1 +1,82 @@
-<p class="animate__animated animate__fadeIn">ore-parameters works!</p>
+<div class="animate__animated animate__fadeIn">
+    <div class="row my-3">
+        <div class="col">
+            <nz-card nzTitle="Geological Parameters">
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>Type of Ore</p>
+                    </div>
+                    <div class="col-md-8">
+                        <nz-select nzShowSearch nzPlaceHolder="Select a Ore" >
+                            <nz-option *ngFor="let ore of listOfOre; index as i" [nzLabel]="ore" [nzValue]="i"></nz-option>
+                        </nz-select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>Ore grade</p>
+                    </div>
+                    <div class="col-md-4">
+                        <nz-input-group>
+                            <input type="text" nz-input />
+                        </nz-input-group>
+                    </div>
+                    <div class="col-md-4 text-right">
+                        <nz-radio-group nzName="radiogroup">
+                            <label nz-radio nzValue="perc">%</label>
+                            <label nz-radio nzValue="grton">gr/ton</label>
+                        </nz-radio-group>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>Specific Gravity</p>
+                    </div>
+                    <div class="col-md-8">
+                        <nz-input-group nzAddOnAfter="ton/m3">
+                            <input type="text" nz-input />
+                        </nz-input-group>
+                    </div>
+                </div>
+            </nz-card>
+        </div>
+    </div>
+    <div class="row my-3">
+        <div class="col">
+            <nz-card nzTitle="Blasting Parameters">
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>Swell factor</p>
+                    </div>
+                    <div class="col-md-8">
+                        <nz-input-group nzAddOnAfter="%">
+                            <input type="text" nz-input />
+                        </nz-input-group>
+                    </div>
+                </div>
+            </nz-card>
+        </div>
+    </div>
+    <div class="row my-3">
+        <div class="col">
+            <nz-card nzTitle="Economic Parameters">
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>Market Price</p>
+                    </div>
+                    <div class="col-md-4">
+                        <nz-input-group>
+                            <input type="text" nz-input />
+                        </nz-input-group>
+                    </div>
+                    <div class="col-md-4">
+                        <nz-radio-group nzName="radiogroupmarket">
+                            <label nz-radio nzValue="perc">%</label>
+                            <label nz-radio nzValue="grton">gr/ton</label>
+                        </nz-radio-group>
+                    </div>
+                </div>
+            </nz-card>
+        </div>
+    </div>
+</div>

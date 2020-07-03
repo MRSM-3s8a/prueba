@@ -8,6 +8,8 @@ import { NzTableModule } from 'ng-zorro-antd/table';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzSpaceModule } from 'ng-zorro-antd/space';
+import { NzSelectModule } from 'ng-zorro-antd/select';
+import { NzRadioModule } from 'ng-zorro-antd/radio';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { NzSpaceModule } from 'ng-zorro-antd/space';
     NzTableModule,
     NzButtonModule,
     NzIconModule,
-    NzSpaceModule
+    NzSpaceModule,
+    NzSelectModule,
+    NzRadioModule
   ],
   exports: [
     NzLayoutModule,
@@ -32,7 +36,9 @@ import { NzSpaceModule } from 'ng-zorro-antd/space';
     NzTableModule,
     NzButtonModule,
     NzIconModule,
-    NzSpaceModule
+    NzSpaceModule,
+    NzSelectModule,
+    NzRadioModule
   ]
 })
 export class NgZorroModule { }
