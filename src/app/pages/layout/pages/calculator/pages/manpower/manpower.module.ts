@@ -3,13 +3,15 @@ import { CommonModule } from '@angular/common';
 
 import { ManpowerRoutingModule } from './manpower-routing.module';
 import { ManpowerComponent } from './manpower.component';
+import { NgZorroModule } from 'src/app/modules/ng-zorro/ng-zorro.module';
 
 
 @NgModule({
   declarations: [ManpowerComponent],
   imports: [
     CommonModule,
-    ManpowerRoutingModule
+    ManpowerRoutingModule,
+    NgZorroModule
   ],
   exports:[ManpowerComponent]
 })

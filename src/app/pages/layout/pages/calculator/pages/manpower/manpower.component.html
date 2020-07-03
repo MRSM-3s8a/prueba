@@ -5,7 +5,58 @@
     
     <div [ngSwitch]="menuActivated">
         <!-- <pre *ngSwitchDefault>ng generate component xyz</pre> -->
-        <pre *ngSwitchCase="'loaders'">loaders</pre>
+        <div *ngSwitchCase="'loaders'">
+            <div class="row my-3" >
+                <div class="col">
+                    <nz-card  nzTitle="Operator costs">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>Number of loader operators</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <nz-slider #slider></nz-slider>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class="col">
+                                        Operators
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        {{slider.value}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-3">
+                            <div class="col-md-4">
+                                <p>Monthly Salary</p>
+                            </div>
+                            <div class="col-md-8">
+                                <nz-input-group nzAddOnAfter="$">
+                                    <input type="text" nz-input />
+                                </nz-input-group>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p>Monthly Working Hours</p>
+                            </div>
+                            <div class="col-md-8">
+                                <nz-input-group nzAddOnAfter="$">
+                                    <input type="text" nz-input />
+                                </nz-input-group>
+                            </div>
+                        </div>
+                    </nz-card>
+                </div>
+            </div>
+        </div>
         <pre *ngSwitchCase="'trucks'">trucks</pre>
         <pre *ngSwitchCase="'jumbos'">jumbos</pre>
         <pre *ngSwitchCase="'longhole'">longhole</pre>
