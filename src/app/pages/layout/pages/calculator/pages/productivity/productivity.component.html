@@ -1,16 +1,64 @@
 <div class="animate__animated animate__fadeIn">
 
-    <p>productivity works!</p>
-    
     <div [ngSwitch]="menuActivated">
         <!-- <pre *ngSwitchDefault>ng generate component xyz</pre> -->
-        <pre *ngSwitchCase="'loaders'">loaders</pre>
-        <pre *ngSwitchCase="'trucks'">trucks</pre>
-        <pre *ngSwitchCase="'jumbos'">jumbos</pre>
-        <pre *ngSwitchCase="'longhole'">longhole</pre>
-        <pre *ngSwitchCase="'charger'">charger</pre>
-        <pre *ngSwitchCase="'forklifts'">forklifts</pre>
-        <pre *ngSwitchCase="'lvs'">lvs</pre>
-        <pre *ngSwitchCase="'others'">others</pre>
+        <div *ngSwitchCase="'loaders'">
+            <app-productivity-form
+                [truckType]="'Loaders'"
+                [showTipPointInput]="true"
+            >
+
+            </app-productivity-form>
+        </div>
+        <div *ngSwitchCase="'trucks'">
+            <app-productivity-form
+                [truckType]="'Trucks'"
+                [showTipPointInput]="true"
+            >
+
+            </app-productivity-form>
+        </div>
+        <div *ngSwitchCase="'jumbos'">
+            <app-productivity-form
+                [truckType]="'Jumbos'"
+            >
+
+            </app-productivity-form>
+        </div>
+        <div *ngSwitchCase="'longhole'">
+            <app-productivity-form
+                [truckType]="'Long Hole Rig'"
+            >
+
+            </app-productivity-form>
+        </div>
+        <div *ngSwitchCase="'charger'">
+            <app-productivity-form
+                [truckType]="'Charger'"
+            >
+
+            </app-productivity-form>
+        </div>
+        <div *ngSwitchCase="'forklifts'">
+            <app-productivity-form
+                [truckType]="'Forklifts'"
+            >
+
+            </app-productivity-form>
+        </div>
+        <div *ngSwitchCase="'lvs'">
+            <app-productivity-form
+                [truckType]="'LVs'"
+            >
+
+            </app-productivity-form>
+        </div>
+        <div *ngSwitchCase="'others'">
+            <app-productivity-form
+                [truckType]="'Others'"
+            >
+
+            </app-productivity-form>
+        </div>
     </div>
 </div>

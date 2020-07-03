@@ -1,0 +1,165 @@
+<div class="row my-3" >
+    <div class="col">
+        <nz-card  nzTitle="Time for {{ truckType }}">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Checklist at Start of Shift</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <nz-slider #sliderStartShift></nz-slider>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="row">
+                        <div class="col">
+                            minutes
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            {{sliderStartShift.value}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Bucket filling time</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <nz-slider #sliderBucketFilling></nz-slider>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="row">
+                        <div class="col">
+                            minutes
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            {{sliderBucketFilling.value}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Bucket emptying time</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <nz-slider #sliderBucketEmptying></nz-slider>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="row">
+                        <div class="col">
+                            minutes
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            {{sliderBucketEmptying.value}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nz-card>
+    </div>
+</div>
+<div class="row my-3" *ngIf="showTipPointInput">
+    <div class="col">
+        <nz-card  nzTitle="Distance for {{ truckType }}">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>From face / stope to tip point</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <nz-slider #sliderDistanceTipPoint></nz-slider>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="row">
+                        <div class="col">
+                            metres
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            {{sliderDistanceTipPoint.value}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nz-card>
+    </div>
+</div>
+<div class="row my-3">
+    <div class="col">
+        <nz-card  nzTitle="Speed for {{ truckType }}">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Average speed loaded</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <nz-slider #sliderAverageSpeedLoaded></nz-slider>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="row">
+                        <div class="col">
+                            km/hr
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            {{sliderAverageSpeedLoaded.value}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Average speed empty</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <nz-slider #sliderAverageSpeedEmpty></nz-slider>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="row">
+                        <div class="col">
+                            km/hr
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            {{sliderAverageSpeedEmpty.value}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nz-card>
+    </div>
+</div>
