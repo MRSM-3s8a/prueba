@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { EquipmentFleetRoutingModule } from './equipment-fleet-routing.module';
 import { EquipmentFleetComponent } from './equipment-fleet.component';
 import { NgZorroModule } from 'src/app/modules/ng-zorro/ng-zorro.module';
+import { EquipmentFleetFormModule } from 'src/app/components/equipment-fleet-form/equipment-fleet-form.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { NgZorroModule } from 'src/app/modules/ng-zorro/ng-zorro.module';
   imports: [
     CommonModule,
     EquipmentFleetRoutingModule,
-    NgZorroModule
+    NgZorroModule,
+    EquipmentFleetFormModule
   ],
   exports:[EquipmentFleetComponent]
 })
