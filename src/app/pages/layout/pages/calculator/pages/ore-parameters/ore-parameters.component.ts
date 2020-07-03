@@ -7,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OreParametersComponent implements OnInit {
 
+  listOfOre = [
+    "Copper",
+    "Gold",
+    "Silver",
+    "Lead",
+    "Zinc",
+    "Polymetallic"
+  ];
   constructor() { }
 
   ngOnInit(): void {
