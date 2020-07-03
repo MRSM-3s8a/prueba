@@ -7,8 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class EquipmentFleetFormComponent implements OnInit {
 
-  @Input() title: string;
-  
+  @Input() truckType: string;
+
   constructor() { }
 
   ngOnInit(): void {
