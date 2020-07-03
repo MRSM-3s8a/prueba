@@ -1,68 +1,62 @@
 <div class="animate__animated animate__fadeIn">
-
-    <p>manpower works!</p>
-    
     
     <div [ngSwitch]="menuActivated">
         <!-- <pre *ngSwitchDefault>ng generate component xyz</pre> -->
         <div *ngSwitchCase="'loaders'">
-            <div class="row my-3" >
-                <div class="col">
-                    <nz-card  nzTitle="Operator costs">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <p>Number of loader operators</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <nz-slider #slider></nz-slider>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="row">
-                                    <div class="col">
-                                        Operators
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">
-                                        {{slider.value}}
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row my-3">
-                            <div class="col-md-4">
-                                <p>Monthly Salary</p>
-                            </div>
-                            <div class="col-md-8">
-                                <nz-input-group nzAddOnAfter="$">
-                                    <input type="text" nz-input />
-                                </nz-input-group>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <p>Monthly Working Hours</p>
-                            </div>
-                            <div class="col-md-8">
-                                <nz-input-group nzAddOnAfter="$">
-                                    <input type="text" nz-input />
-                                </nz-input-group>
-                            </div>
-                        </div>
-                    </nz-card>
-                </div>
-            </div>
+            <app-manpower-form
+                [truckType]="'Loader'"
+            >
+            
+            </app-manpower-form>
         </div>
-        <pre *ngSwitchCase="'trucks'">trucks</pre>
-        <pre *ngSwitchCase="'jumbos'">jumbos</pre>
-        <pre *ngSwitchCase="'longhole'">longhole</pre>
-        <pre *ngSwitchCase="'charger'">charger</pre>
-        <pre *ngSwitchCase="'forklifts'">forklifts</pre>
-        <pre *ngSwitchCase="'lvs'">lvs</pre>
-        <pre *ngSwitchCase="'others'">others</pre>
+        <div *ngSwitchCase="'trucks'">
+            <app-manpower-form
+                [truckType]="'Truck'"
+            >
+
+            </app-manpower-form>
+        </div>
+        <div *ngSwitchCase="'jumbos'">
+            <app-manpower-form
+                [truckType]="'Jumbo'"
+            >
+
+            </app-manpower-form>
+        </div>
+        <div *ngSwitchCase="'longhole'">
+            <app-manpower-form
+                [truckType]="'Long Hole Rig'"
+            >
+
+            </app-manpower-form>
+        </div>
+        <div *ngSwitchCase="'charger'">
+            <app-manpower-form
+                [truckType]="'Charger'"
+            >
+
+            </app-manpower-form>
+        </div>
+        <div *ngSwitchCase="'forklifts'">
+            <app-manpower-form
+                [truckType]="'Forklift'"
+            >
+
+            </app-manpower-form>
+        </div>
+        <div *ngSwitchCase="'lvs'">
+            <app-manpower-form
+                [truckType]="'LV'"
+            >
+
+            </app-manpower-form>
+        </div>
+        <div *ngSwitchCase="'others'">
+            <app-manpower-form
+                [truckType]="'Other'"
+            >
+
+            </app-manpower-form>
+        </div>
     </div>
 </div>
