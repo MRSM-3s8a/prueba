@@ -9,18 +9,22 @@ export class ConsumablesComponent implements OnInit {
 
   checked = false;
   indeterminate = false;
-  listOfCurrentPageData: ItemData[] = [];
-  listOfData: ItemData[] = [];
+  listOfCurrentPageData: ConsumableItemData[] = [];
+  listOfData: ConsumableItemData[] = [];
   setOfCheckedId = new Set<number>();
   constructor() { }
 
   ngOnInit(): void {
-    this.listOfData = new Array(200).fill(0).map((_, index) => {
+    this.listOfData = new Array(30).fill(0).map((_, index) => {
       return {
         id: index,
-        name: `Edward King ${index}`,
-        age: 32,
-        address: `London, Park Lane no. ${index}`
+        name: `Ventilation duct ${index}`,
+        description: `${index}m length`,
+        unitPrice: index,
+        quantity:index
+
+        // age: 32,
+        // address: `London, Park Lane no. ${index}`
       };
     });
   }
@@ -43,7 +47,7 @@ export class ConsumablesComponent implements OnInit {
     this.indeterminate = this.listOfCurrentPageData.some(item => this.setOfCheckedId.has(item.id)) && !this.checked;
   }
 
-  onCurrentPageDataChange($event: ItemData[]): void {
+  onCurrentPageDataChange($event: ConsumableItemData[]): void {
     this.listOfCurrentPageData = $event;
     this.refreshCheckedStatus();
   }
@@ -54,9 +58,10 @@ export class ConsumablesComponent implements OnInit {
   }
 }
 
-export interface ItemData {
+export interface ConsumableItemData {
   id: number;
   name: string;
-  age: number;
-  address: string;
+  description: string;
+  unitPrice: number;
+  quantity: number;
 }
