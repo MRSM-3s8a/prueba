@@ -5,7 +5,10 @@
     <div [ngSwitch]="menuActivated">
         <!-- <pre *ngSwitchDefault>ng generate component xyz</pre> -->
         <div *ngSwitchCase="'loaders'">
-            <div class="row my-3" >
+            <app-equipment-fleet-form>
+
+            </app-equipment-fleet-form>
+            <!-- <div class="row my-3" >
                 <div class="col">
                     <nz-card  nzTitle="Quantity">
                         <div class="row">
@@ -128,7 +131,7 @@
                         </div>
                     </nz-card>
                 </div>
-            </div>
+            </div> -->
         </div>
         
         
