@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ProductivityFormComponent implements OnInit {
 
   @Input() truckType: string;
+  @Input() showTipPointInput: boolean = false;
   
   constructor() { }
 
